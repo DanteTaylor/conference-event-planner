@@ -48,14 +48,14 @@ const ConferenceEvent = () => {
 
     };
     const calculateTotalCost = (section) => {
-        let totalCost = 0;
-        if (section === "venue") {
-          venueItems.forEach((item) => {
-            totalCost += item.cost * item.quantity;
-          });
-        }
-        return totalCost;
-      };
+      let totalCost = 0;
+      if (section === "venue") {
+        venueItems.forEach((item) => {
+          totalCost += item.cost * item.quantity;
+        });
+      }
+      return totalCost;
+    };
     const venueTotalCost = calculateTotalCost("venue");
 
     const navigateToProducts = (idType) => {

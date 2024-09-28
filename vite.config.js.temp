@@ -8,3 +8,4 @@ _plugins.unshift(MillionLint.vite())
 export default defineConfig({
   plugins: _plugins
 });
+
